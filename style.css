@@ -14,3 +14,32 @@ body {
   transform: rotate(-10deg);
   transform-origin: bottom left;
 }
+
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-header {
+
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+  height: 400px;
+  width: 300px;
+}
+
+.image-container {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
