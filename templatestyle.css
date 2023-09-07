@@ -112,5 +112,29 @@ body {
 /* footer styles */
 
 .footer {
+  width: 100%;
+  height: 600px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--desktop-padding);
+  padding: var(--desktop-padding);
+}
 
+.footer-info {
+  width: 40%;
+  height: 100%;
+  padding: var(--desktop-padding);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: var(--desktop-padding);
+}
+
+.footer-pic {
+  width: 60%;
+  max-width: 800px;
+  height: 100%;
+  background-color: blue;
 }
