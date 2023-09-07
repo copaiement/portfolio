@@ -1,7 +1,6 @@
 /* general styles */
 :root {
   font-size: 24px;
-  --desktop-margin: 36px;
   --desktop-padding: 36px;
 }
 
@@ -14,8 +13,8 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  /* height: 100vh; */
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: aquamarine;
@@ -25,7 +24,7 @@ body {
 
 .header {
   position: relative;
-  height: 35%;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -76,7 +75,38 @@ body {
 /* main body styles */
 
 .main {
+  width: 100%;
+  padding: var(--desktop-padding);
+}
 
+.portfolio-text {
+  font-size: 1.5rem;
+  padding-bottom: var(--desktop-padding);
+}
+
+.portfolio {
+  display: grid;
+  gap: var(--desktop-padding);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+}
+
+.project-photo {
+  height: 60%;
+  width: 100%;
+  background-color: red;
+}
+
+.project-info {
+  height: 40%;
+  width: 100%;
+  background-color: white;
 }
 
 /* footer styles */
