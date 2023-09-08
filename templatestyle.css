@@ -120,6 +120,14 @@ body {
   height: 40%;
   width: 100%;
   background-color: white;
+  padding: var(--desktop-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--desktop-padding);
+}
+
+.project-info-header {
+  font-weight: bold;
 }
 
 /* footer styles */
@@ -135,19 +143,49 @@ body {
   padding: var(--desktop-padding);
 }
 
-.footer-info {
+.footer-info-container {
   width: 40%;
   height: 100%;
   padding: var(--desktop-padding);
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: var(--desktop-padding);
 }
 
 .footer-pic {
+  background-image: url(./images/dog.jpg);
+  background-position: center;
+  background-size: cover;
   width: 60%;
   max-width: 800px;
   height: 100%;
   background-color: blue;
+}
+
+.footer-heading {
+  font-weight: bold;
+}
+
+.footer-contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  height: 1.3rem;
+  aspect-ratio: 1;
+}
+
+.footer-icons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons {
+  height: 2rem;
+  aspect-ratio: 1;
+  fill: black;
 }
